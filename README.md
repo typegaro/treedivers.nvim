@@ -1,7 +1,5 @@
 # treedivers.nvim
 
-**Author:** typegaro
-
 ## Description
 
 `treedivers.nvim` is a lightweight file explorer for Neovim written in Lua. It
