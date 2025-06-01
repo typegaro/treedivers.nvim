@@ -1,5 +1,5 @@
 # treedivers.nvim
-
+⚠️ Warning: This project is currently in alpha stage. Expect bugs, incomplete features, and breaking changes. Use with caution and feel free to contribute!
 ## Description
 
 `treedivers.nvim` is a lightweight file explorer for Neovim written in Lua. It
