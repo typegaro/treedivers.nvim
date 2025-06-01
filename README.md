@@ -63,7 +63,7 @@ After installing, restart Neovim and use the command `:TreeDivers` to toggle the
 ## Contributing
 
 **All contributions are welcome!**
-This plugin is in its early stages, and there’s plenty of room for improvement. Whether you’ve found a bug, have a feature request, or want to submit a pull request — you're invited to contribute.
+This plugin is in its early stages, and there’s plenty of room for improvement. Whether you’ve found a bug, have a feature request, or want to submit a pull request, you're invited to contribute.
 
 ### How to contribute
 
