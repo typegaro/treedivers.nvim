@@ -1,8 +1,6 @@
 # treedivers.nvim
 
 **Author:** typegaro
-**GitHub:** [https://github.com/typegaro/treedivers.nvim](https://github.com/typegaro/treedivers.nvim)
-
 
 ## Description
 
