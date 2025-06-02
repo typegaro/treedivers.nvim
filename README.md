@@ -1,4 +1,5 @@
 # treedivers.nvim
+![Banner](img/banner.png)
 ⚠️ Warning: This project is currently in alpha stage. Expect bugs, incomplete features, and breaking changes. Use with caution and feel free to contribute!
 ## Description
 
