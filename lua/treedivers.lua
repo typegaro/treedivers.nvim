@@ -123,6 +123,7 @@ local function build_tree(path, existing_keys, relative_prefix)
     return nodes
 end
 
+
 local function flatten_tree(nodes, indent, lines, highlights, linenr)
     for _, node in ipairs(nodes) do
         local prefix = string.rep("  ", indent)
@@ -139,15 +140,20 @@ local function flatten_tree(nodes, indent, lines, highlights, linenr)
             icon_hl = icon_hl or "Normal"
         end
 
-        local line = string.format("%s%s %s (%s)", prefix, icon, node.name, node.displayKey)
+        local line = string.format("%s(%s) %s %s", prefix, node.displayKey, icon, node.name)
         table.insert(lines, line)
+
+        local prefix_width = vim.fn.strdisplaywidth(prefix)
+        local key_width = vim.fn.strdisplaywidth("(" .. node.displayKey .. ")")
+        local icon_width = vim.fn.strdisplaywidth(icon) + 1
+        local name_width = vim.fn.strdisplaywidth(node.name) + 2
 
         table.insert(highlights, {
             line = linenr[1],
             ranges = {
-                { start = #prefix,             len = #icon,                hl = icon_hl },
-                { start = #prefix + #icon + 1, len = #node.name,           hl = icon_hl },
-                { start = line:find("%(") - 1, len = #node.displayKey + 2, hl = "Identifier" },
+                { start = prefix_width,                                  len = key_width,  hl = "Identifier" },
+                { start = prefix_width + key_width + 1,                  len = icon_width, hl = icon_hl },
+                { start = prefix_width + key_width + 1 + icon_width + 1, len = name_width, hl = icon_hl },
             }
         })
 
@@ -158,6 +164,8 @@ local function flatten_tree(nodes, indent, lines, highlights, linenr)
         end
     end
 end
+
+
 
 function M.build_root_tree()
     -- Initialize root path here, as it might change (e.g., cwd can be different at runtime)
