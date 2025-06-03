@@ -1,14 +1,12 @@
 # treedivers.nvim
 ![Banner](img/banner.png)
-⚠️ Warning: This project is currently in alpha stage. Expect bugs, incomplete features, and breaking changes. Use with caution and feel free to contribute!
+⚠️ This project is currently in alpha stage. Expect bugs. feel free to contribute!
+
 ## Description
 
-`treedivers.nvim` is a lightweight file explorer for Neovim written in Lua. It
-allows you to browse directory structures in a vertical sidebar. The plugin
-supports expanding and collapsing directories, displays file and folder icons
-using `nvim-web-devicons` (if installed), and dynamically assigns shortcut keys
-to open files or toggle folders.
+Navigating file trees in Neovim often means either using the mouse or switching buffers to interact with tree explorers. Both approaches can feel slow and interrupt your flow. Switching buffers breaks your focus, and relying on the mouse goes against the keyboard-driven philosophy of Neovim. This friction can make managing files more tedious than it needs to be.
 
+`treedivers.nvim` offers a straightforward solution: a lightweight sidebar file explorer that stays within your current Neovim session and uses intuitive keybindings to open files or toggle directories without ever leaving your main editing context. No mouse clicks, no buffer switching. Just simple, fast navigation that fits naturally into the Neovim way of working.
 
 ## Features
 
