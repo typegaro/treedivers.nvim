@@ -29,7 +29,7 @@ return {
     config = function()
       require("treedivers").setup()
       -- Optional: keymap to toggle the sidebar
-      vim.keymap.set("n", "<leader>e", "<cmd>TreeDivers<cr>", { noremap = true, silent = true })
+      vim.keymap.set("n", "<leader>e", ":TreeDivers<CR>", { noremap = true, silent = true })
     end,
   },
 }
